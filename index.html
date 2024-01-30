@@ -53,8 +53,14 @@
         </header>
         <main>
             <section class="pt-[110px]">
-                <div class="container">
-                    <img class="rounded-xl" src="./assets/images/corusel-img.png" alt="">
+                <div class="container relative">
+                    <img class="rounded-xl" src="./assets/images/corusel-img.png" alt="img">
+                    <span  class="prev-button absolute top-[45%] left-[-50px] w-[42px] h-[42px] bg-gradient-to-l from-[#4d5ef633] to-[#f64d4d33] flex items-center justify-center rounded-full cursor-pointer">
+                        <img src="./assets/images/keyboard_arrow_left.svg" alt="icon">
+                    </span>
+                    <span onclick="slider()" class="next-button absolute top-[45%] right-[-50px] w-[42px] h-[42px] bg-gradient-to-l from-[#4D5EF6] to-[#F64D4D] flex items-center justify-center rounded-full cursor-pointer">
+                        <img src="./assets/images/keyboard_arrow_right.svg" alt="icon">
+                    </span>
                 </div>
             </section>
 
@@ -282,11 +288,353 @@
                     <button class="h-[50px] bg-white w-full text-[18px] rounded-[10px]">Ko’proq ko’rish</button>
                 </div>
             </section>
+
             <section class="pb-[60px]">
-                <div class="container">
-                    <img src="./assets/images/corusel-img-2.jpg" alt="img">
+                <div class="container relative">
+                    <img class="rounded-[20px]" src="./assets/images/corusel-img-2.jpg" alt="img">
+                    <span  class="prev-button absolute top-[45%] left-[-50px] w-[42px] h-[42px] bg-gradient-to-l from-[#4d5ef633] to-[#f64d4d33] flex items-center justify-center rounded-full cursor-pointer">
+                        <img src="./assets/images/keyboard_arrow_left.svg" alt="icon">
+                    </span>
+                    <span onclick="slider()" class="next-button absolute top-[45%] right-[-50px] w-[42px] h-[42px] bg-gradient-to-l from-[#4D5EF6] to-[#F64D4D] flex items-center justify-center rounded-full cursor-pointer">
+                        <img src="./assets/images/keyboard_arrow_right.svg" alt="icon">
+                    </span>
                 </div>
             </section>
+
+            <section class="pb-[60px]">
+                <div class="container">
+                    <p class="text-[28px] mb-5">Eng ommabop</p>
+                    <div class="flex gap-5 flex-wrap mb-[37px]">
+                        <div class="w-[230px] h-[377px] bg-white rounded-[10px] p-[10px] relative">
+                            <img class="mx-auto" src="./assets/images/laptop2.png" alt="img">
+                            <img class="absolute top-[10px] right-[10px] cursor-pointer" src="./assets/images/favorite_border.svg" alt="icon">
+                            <div class="pl-[10px]">
+                                <div>
+                                    <p class="text-[#0D63F3] text-[18px]">299 000 so’m</p>
+                                    <p class="text-[14px] leading-4">Apple Airpods Pro simsiz quloqchin , Oq rangda   </p>
+                                </div>
+                                <div class="absolute bottom-[10px]">
+                                    <p class="text-[14px] text-[#6C757D] mb-[25px]">1230 ta buyurtma</p>
+                                    <div class="flex gap-x-[28px]">
+                                        <button class="w-[130px] py-[10px] bg-[#0D63F3] text-white rounded-lg">Sotib olish</button>
+                                        <img class="cursor-pointer" src="./assets/images/shopping_cart.svg" alt="icon">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-[230px] h-[377px] bg-white rounded-[10px] p-[10px] relative">
+                            <img class="mx-auto" src="./assets/images/laptop2.png" alt="img">
+                            <img class="absolute top-[10px] right-[10px] cursor-pointer" src="./assets/images/favorite_border.svg" alt="icon">
+                            <div class="pl-[10px]">
+                                <div>
+                                    <p class="text-[#0D63F3] text-[18px]">16 114 285 so'm</p>
+                                    <p class="text-[14px] leading-4">Apple Macbook Pro 13" 2.4 2019 Intel core i5 DDR3 8 GB SSD 256 GB</p>
+                                </div>
+                                <div class="absolute bottom-[10px]">
+                                    <p class="text-[14px] text-[#6C757D] mb-[25px]">230 ta buyurtma</p>
+                                    <div class="flex gap-x-[28px]">
+                                        <button class="w-[130px] py-[10px] bg-[#0D63F3] text-white rounded-lg">Sotib olish</button>
+                                        <img class="cursor-pointer" src="./assets/images/shopping_cart.svg" alt="icon">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-[230px] h-[377px] bg-white rounded-[10px] p-[10px] relative">
+                            <img class="mx-auto" src="./assets/images/laptop2.png" alt="img">
+                            <img class="absolute top-[10px] right-[10px] cursor-pointer" src="./assets/images/favorite_border.svg" alt="icon">
+                            <div class="pl-[10px]">
+                                <div>
+                                    <p class="text-[#0D63F3] text-[18px]">4 234 000 so’m</p>
+                                    <p class="text-[14px] leading-4">Apple watch 4 </p>
+                                </div>
+                                <div class="absolute bottom-[10px]">
+                                    <p class="text-[14px] text-[#6C757D] mb-[25px]">543 ta buyurtma</p>
+                                    <div class="flex gap-x-[28px]">
+                                        <button class="w-[130px] py-[10px] bg-[#0D63F3] text-white rounded-lg">Sotib olish</button>
+                                        <img class="cursor-pointer" src="./assets/images/shopping_cart.svg" alt="icon">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-[230px] h-[377px] bg-white rounded-[10px] p-[10px] relative">
+                            <img class="mx-auto" src="./assets/images/laptop2.png" alt="img">
+                            <img class="absolute top-[10px] right-[10px] cursor-pointer" src="./assets/images/favorite_border.svg" alt="icon">
+                            <div class="pl-[10px]">
+                                <div>
+                                    <p class="text-[#0D63F3] text-[18px]">1 340 000 so’m</p>
+                                    <p class="text-[14px] leading-4">Robot - tozalagich Xiaomi Mi Robot</p>
+                                </div>
+                                <div class="absolute bottom-[10px]">
+                                    <p class="text-[14px] text-[#6C757D] mb-[25px]">876 ta buyurtma</p>
+                                    <div class="flex gap-x-[28px]">
+                                        <button class="w-[130px] py-[10px] bg-[#0D63F3] text-white rounded-lg">Sotib olish</button>
+                                        <img class="cursor-pointer" src="./assets/images/shopping_cart.svg" alt="icon">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-[230px] h-[377px] bg-white rounded-[10px] p-[10px] relative">
+                            <img class="mx-auto" src="./assets/images/laptop2.png" alt="img">
+                            <img class="absolute top-[10px] right-[10px] cursor-pointer" src="./assets/images/favorite_border.svg" alt="icon">
+                            <div class="pl-[10px]">
+                                <div>
+                                    <p class="text-[#0D63F3] text-[18px]">1 345 000 so’m</p>
+                                    <p class="text-[14px] leading-4">Oynali Fotoaparat anon EOS 6D Body</p>
+                                </div>
+                                <div class="absolute bottom-[10px]">
+                                    <p class="text-[14px] text-[#6C757D] mb-[25px]">565 ta buyurtma</p>
+                                    <div class="flex gap-x-[28px]">
+                                        <button class="w-[130px] py-[10px] bg-[#0D63F3] text-white rounded-lg">Sotib olish</button>
+                                        <img class="cursor-pointer" src="./assets/images/shopping_cart.svg" alt="icon">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-[230px] h-[377px] bg-white rounded-[10px] p-[10px] relative">
+                            <img class="mx-auto" src="./assets/images/laptop2.png" alt="img">
+                            <img class="absolute top-[10px] right-[10px] cursor-pointer" src="./assets/images/favorite_border.svg" alt="icon">
+                            <div class="pl-[10px]">
+                                <div>
+                                    <p class="text-[#0D63F3] text-[18px]">299 000 so’m</p>
+                                    <p class="text-[14px] leading-4">Apple Airpods Pro simsiz quloqchin , Oq rangda   </p>
+                                </div>
+                                <div class="absolute bottom-[10px]">
+                                    <p class="text-[14px] text-[#6C757D] mb-[25px]">1230 ta buyurtma</p>
+                                    <div class="flex gap-x-[28px]">
+                                        <button class="w-[130px] py-[10px] bg-[#0D63F3] text-white rounded-lg">Sotib olish</button>
+                                        <img class="cursor-pointer" src="./assets/images/shopping_cart.svg" alt="icon">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-[230px] h-[377px] bg-white rounded-[10px] p-[10px] relative">
+                            <img class="mx-auto" src="./assets/images/laptop2.png" alt="img">
+                            <img class="absolute top-[10px] right-[10px] cursor-pointer" src="./assets/images/favorite_border.svg" alt="icon">
+                            <div class="pl-[10px]">
+                                <div>
+                                    <p class="text-[#0D63F3] text-[18px]">16 114 285 so'm</p>
+                                    <p class="text-[14px] leading-4">Apple Macbook Pro 13" 2.4 2019 Intel core i5 DDR3 8 GB SSD 256 GB</p>
+                                </div>
+                                <div class="absolute bottom-[10px]">
+                                    <p class="text-[14px] text-[#6C757D] mb-[25px]">230 ta buyurtma</p>
+                                    <div class="flex gap-x-[28px]">
+                                        <button class="w-[130px] py-[10px] bg-[#0D63F3] text-white rounded-lg">Sotib olish</button>
+                                        <img class="cursor-pointer" src="./assets/images/shopping_cart.svg" alt="icon">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-[230px] h-[377px] bg-white rounded-[10px] p-[10px] relative">
+                            <img class="mx-auto" src="./assets/images/laptop2.png" alt="img">
+                            <img class="absolute top-[10px] right-[10px] cursor-pointer" src="./assets/images/favorite_border.svg" alt="icon">
+                            <div class="pl-[10px]">
+                                <div>
+                                    <p class="text-[#0D63F3] text-[18px]">4 234 000 so’m</p>
+                                    <p class="text-[14px] leading-4">Apple watch 4 </p>
+                                </div>
+                                <div class="absolute bottom-[10px]">
+                                    <p class="text-[14px] text-[#6C757D] mb-[25px]">543 ta buyurtma</p>
+                                    <div class="flex gap-x-[28px]">
+                                        <button class="w-[130px] py-[10px] bg-[#0D63F3] text-white rounded-lg">Sotib olish</button>
+                                        <img class="cursor-pointer" src="./assets/images/shopping_cart.svg" alt="icon">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-[230px] h-[377px] bg-white rounded-[10px] p-[10px] relative">
+                            <img class="mx-auto" src="./assets/images/laptop2.png" alt="img">
+                            <img class="absolute top-[10px] right-[10px] cursor-pointer" src="./assets/images/favorite_border.svg" alt="icon">
+                            <div class="pl-[10px]">
+                                <div>
+                                    <p class="text-[#0D63F3] text-[18px]">1 340 000 so’m</p>
+                                    <p class="text-[14px] leading-4">Robot - tozalagich Xiaomi Mi Robot</p>
+                                </div>
+                                <div class="absolute bottom-[10px]">
+                                    <p class="text-[14px] text-[#6C757D] mb-[25px]">876 ta buyurtma</p>
+                                    <div class="flex gap-x-[28px]">
+                                        <button class="w-[130px] py-[10px] bg-[#0D63F3] text-white rounded-lg">Sotib olish</button>
+                                        <img class="cursor-pointer" src="./assets/images/shopping_cart.svg" alt="icon">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-[230px] h-[377px] bg-white rounded-[10px] p-[10px] relative">
+                            <img class="mx-auto" src="./assets/images/laptop2.png" alt="img">
+                            <img class="absolute top-[10px] right-[10px] cursor-pointer" src="./assets/images/favorite_border.svg" alt="icon">
+                            <div class="pl-[10px]">
+                                <div>
+                                    <p class="text-[#0D63F3] text-[18px]">1 345 000 so’m</p>
+                                    <p class="text-[14px] leading-4">Oynali Fotoaparat anon EOS 6D Body</p>
+                                </div>
+                                <div class="absolute bottom-[10px]">
+                                    <p class="text-[14px] text-[#6C757D] mb-[25px]">565 ta buyurtma</p>
+                                    <div class="flex gap-x-[28px]">
+                                        <button class="w-[130px] py-[10px] bg-[#0D63F3] text-white rounded-lg">Sotib olish</button>
+                                        <img class="cursor-pointer" src="./assets/images/shopping_cart.svg" alt="icon">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="h-[50px] bg-white w-full text-[18px] rounded-[10px]">Ko’proq ko’rish</button>
+                </div>
+            </section>
+
+            <section class="pb-[60px]">
+                <div class="container">
+                    <p class="text-[28px] mb-[20px]">Brendlar bo'yicha</p>
+                    <div class="flex flex-wrap gap-5">
+                        <div class="w-[188px] h-[100px] rounded-lg bg-white flex items-center justify-center">
+                            <img src="./assets/images/hp.png" alt="img">
+                        </div>
+                        <div class="w-[188px] h-[100px] rounded-lg bg-white flex items-center justify-center">
+                            <img src="./assets/images/acer.png" alt="img">
+                        </div>
+                        <div class="w-[188px] h-[100px] rounded-lg bg-white flex items-center justify-center">
+                            <img src="./assets/images/asus.png" alt="img">
+                        </div>
+                        <div class="w-[188px] h-[100px] rounded-lg bg-white flex items-center justify-center">
+                            <img src="./assets/images/samsung.png" alt="img">
+                        </div>
+                        <div class="w-[188px] h-[100px] rounded-lg bg-white flex items-center justify-center">
+                            <img src="./assets/images/apple.png" alt="img">
+                        </div>
+                        <div class="w-[188px] h-[100px] rounded-lg bg-white flex items-center justify-center">
+                            <img src="./assets/images/msi.png" alt="img">
+                        </div>
+                        <div class="w-[188px] h-[100px] rounded-lg bg-white flex items-center justify-center">
+                            <img src="./assets/images/mi.png" alt="img">
+                        </div>
+                        <div class="w-[188px] h-[100px] rounded-lg bg-white flex items-center justify-center">
+                            <img src="./assets/images/vivo.png" alt="img">
+                        </div>
+                        <div class="w-[188px] h-[100px] rounded-lg bg-white flex items-center justify-center">
+                            <img src="./assets/images/none.png" alt="img">
+                        </div>
+                        <div class="w-[188px] h-[100px] rounded-lg bg-white flex items-center justify-center">
+                            <img src="./assets/images/none.png" alt="img">
+                        </div>
+                        <div class="w-[188px] h-[100px] rounded-lg bg-white flex items-center justify-center">
+                            <img src="./assets/images/none.png" alt="img">
+                        </div>
+                        <div class="w-[188px] h-[100px] rounded-lg bg-white flex items-center justify-center">
+                            <img src="./assets/images/none.png" alt="img">
+                        </div>
+                        <div class="w-[188px] h-[100px] rounded-lg bg-white flex items-center justify-center">
+                            <img src="./assets/images/none.png" alt="img">
+                        </div>
+                        <div class="w-[188px] h-[100px] rounded-lg bg-white flex items-center justify-center">
+                            <img src="./assets/images/none.png" alt="img">
+                        </div>
+                        <div class="w-[188px] h-[100px] rounded-lg bg-white flex items-center justify-center">
+                            <img src="./assets/images/none.png" alt="img">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="pb-[60px]">
+                <div class="container relative">
+                    <img class="rounded-[20px]" src="./assets/images/corusel-img-2.jpg" alt="img">
+                    <span  class="prev-button absolute top-[45%] left-[-50px] w-[42px] h-[42px] bg-gradient-to-l from-[#4d5ef633] to-[#f64d4d33] flex items-center justify-center rounded-full cursor-pointer">
+                        <img src="./assets/images/keyboard_arrow_left.svg" alt="icon">
+                    </span>
+                    <span onclick="slider()" class="next-button absolute top-[45%] right-[-50px] w-[42px] h-[42px] bg-gradient-to-l from-[#4D5EF6] to-[#F64D4D] flex items-center justify-center rounded-full cursor-pointer">
+                        <img src="./assets/images/keyboard_arrow_right.svg" alt="icon">
+                    </span>
+                </div>
+            </section>
+
+            <section class="pb-[80px]">
+                <div class="container">
+                    <p class="text-[28px] mb-[20px]">Brendlar bo'yicha</p>
+                    <div class="flex flex-wrap gap-5">
+                        <div class="w-[188px] h-[100px] rounded-lg bg-white flex items-center justify-center">
+                            <img src="./assets/images/elmakon.png" alt="img">
+                        </div>
+                        <div class="w-[188px] h-[100px] rounded-lg bg-white flex items-center justify-center">
+                            <img src="./assets/images/texnomart.png" alt="img">
+                        </div>
+                        <div class="w-[188px] h-[100px] rounded-lg bg-white flex items-center justify-center">
+                            <img src="./assets/images/mediapark.png" alt="img">
+                        </div>
+                        <div class="w-[188px] h-[100px] rounded-lg bg-white flex items-center justify-center">
+                            <img src="./assets/images/sandiq.png" alt="img">
+                        </div>
+                        <div class="w-[188px] h-[100px] rounded-lg bg-white flex items-center justify-center">
+                            <img src="./assets/images/goodzone.png" alt="img">
+                        </div>
+                        <div class="w-[188px] h-[100px] rounded-lg bg-white flex items-center justify-center">
+                            <img src="./assets/images/none.png" alt="img">
+                        </div>
+                        <div class="w-[188px] h-[100px] rounded-lg bg-white flex items-center justify-center">
+                            <img src="./assets/images/none.png" alt="img">
+                        </div>
+                        <div class="w-[188px] h-[100px] rounded-lg bg-white flex items-center justify-center">
+                            <img src="./assets/images/none.png" alt="img">
+                        </div>
+                        <div class="w-[188px] h-[100px] rounded-lg bg-white flex items-center justify-center">
+                            <img src="./assets/images/none.png" alt="img">
+                        </div>
+                        <div class="w-[188px] h-[100px] rounded-lg bg-white flex items-center justify-center">
+                            <img src="./assets/images/none.png" alt="img">
+                        </div>
+                        <div class="w-[188px] h-[100px] rounded-lg bg-white flex items-center justify-center">
+                            <img src="./assets/images/none.png" alt="img">
+                        </div>
+                        <div class="w-[188px] h-[100px] rounded-lg bg-white flex items-center justify-center">
+                            <img src="./assets/images/none.png" alt="img">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <footer class="pt-[60px] pb-[38px] bg-gradient-to-l from-[#4d5ef633] to-[#f64d4d33]">
+                <div class="container">
+                    <div class="flex justify-between mb-10">
+                        <ul class="flex flex-col gap-5">
+                            <li><p class="font-semibold">Hujjatlar</p></li>
+                            <li><a href="#">Umumiy shartlar</a></li>
+                            <li><a href="#">Ofertalar arxivi</a></li>
+                            <li><a href="#">Nizom</a></li>
+                            <li><a href="#">Guvohnoma</a></li>
+                        </ul>
+                        <ul class="flex flex-col gap-5">
+                            <li><p class="font-semibold">Servis</p></li>
+                            <li><a href="#">Do’konlar</a></li>
+                            <li><a href="#">Biz haqimizda</a></li>
+                            <li><a href="#">Hamkorlik uchun</a></li>
+                            <li><a href="#">Qaytarish</a></li>
+                            <li><a href="#">Promokodlar</a></li>
+                        </ul>
+                        <ul class="flex flex-col gap-5">
+                            <li><p class="font-semibold">Mahsulotlar katalogi</p></li>
+                            <li><a href="#">Katalog 1</a></li>
+                            <li><a href="#">Katalog 1</a></li>
+                            <li><a href="#">Katalog 2</a></li>
+                            <li><a href="#">Katalog 2</a></li>
+                            <li><a href="#">Katalog 3</a></li>
+                            <li><a href="#">Katalog 3</a></li>
+                        </ul>
+                        <ul class="flex flex-col gap-5">
+                            <li><p class="font-semibold">Axbarot xizmati</p></li>
+                            <li><a href="#">contact.@nextstore.uz</a></li>
+                            <li><a href="#">+998 97 712 96 96 <br> +998 95 503 09 09</a></li>
+                            <li><a href="#">Sag’bon 186, Olmazor tumani, Toshkent, <br> O'zbekiston</a></li>
+                            <li class="flex gap-[26px]">
+                                <a href="#"><img src="./assets/images/Facebook-Original.svg" alt="icon"></a>
+                                <a href="#"><img src="./assets/images/instagram.svg" alt="icon"></a>
+                                <a href="#"><img src="./assets/images/Artboard.svg" alt="icon"></a>
+                                <a href="#"><img src="./assets/images/TikTok-Original.svg" alt="icon"></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="flex gap-[775px] pt-[38px] border-t-[1px] border-black">
+                        <p>2022  Nextstore.com</p>
+                        <p>Powered by </p>
+                    </div>
+                </div>
+            </footer>
         </main>
     </body>
 </html>
