@@ -53,3 +53,30 @@ for(let i = 1; i <= 10; i++) {
     `
     mostPopulationWrapper.append(mostSalesCard)
 }
+
+let katalogBtn = document.querySelector(".katalog-btn"),
+katalogBar = document.querySelector(".katalog-bar", "scale"),
+main = document.querySelector("main")
+
+katalogBtn.addEventListener('click', () => {
+    katalogBar.classList.toggle("block")
+    katalogBar.classList.toggle("hidden")
+})
+
+
+let loginPanel = document.querySelector(".login-panel"),
+loginBtn = document.querySelector(".login-btn"),
+body = document.querySelector("body");
+
+
+loginBtn.addEventListener('click', () => {
+    loginPanel.classList.toggle("block")
+    loginPanel.classList.toggle("hidden")
+    body.setAttribute("class", "overflow-y-hidden")
+})
+
+let removeBtn = document.querySelector(".remove-btn")
+    removeBtn.addEventListener('click', () => {
+    loginPanel.classList.add("hidden")
+    body.setAttribute("class", "overflow-y-scroll")
+})

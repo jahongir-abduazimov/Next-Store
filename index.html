@@ -6,14 +6,16 @@
         <script src="https://cdn.tailwindcss.com"></script>
         <!-- css file -->
         <link rel="stylesheet" href="./styles/output.css" />
+        <link rel="stylesheet" href="./style.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
         <title>Next Store</title>
     </head>
     <body>
-        <header class="shadow-[0_4px_4px_0_#00000040] fixed w-full top-0 bg-white z-10">
-            <div class="container">
+        <header class="shadow-[0_4px_4px_0_#00000040] fixed w-full top-0 bg-white z-50">
+            <div class="container relative">
                 <nav class="flex h-[70px] items-center justify-between">
                     <a href="./index.html"><img src="./assets/images/Logo.svg" alt="logo"></a>
-                    <button class="px-[19px] py-[10px] flex items-center gap-2 text-white rounded-lg bg-gradient-to-l from-[#4D5EF6] to-[#F64D4D]">
+                    <button class="katalog-btn px-[19px] py-[10px] flex items-center gap-2 text-white rounded-lg bg-gradient-to-l from-[#4D5EF6] to-[#F64D4D]">
                         <img src="./assets/images/menu.svg" alt="Munu">
                         <p class="text-white">Katalog</p>
                     </button>
@@ -46,9 +48,113 @@
                                 </defs>
                             </svg>
                         </div>
-                        <button class="py-[10px] text-[#101828] px-6 bg-gradient-to-l from-[#4d5ef633] to-[#f64d4d33] rounded-lg">Kirish</button>
+                        <button class="login-btn py-[10px] text-[#101828] px-6 bg-gradient-to-l from-[#4d5ef633] to-[#f64d4d33] rounded-lg">Kirish</button>
                     </div>
                 </nav>
+                <div class="katalog-bar absolute w-[97.7%] h-[618px] bg-white duration-700 top-[70px] hidden">
+                    <div class="flex">
+                        <div class="w-[25%] bg-gradient-to-l from-[#4d5ef633] to-[#f64d4d33] h-[618px]">
+                            <div class="pl-4 pt-3 flex gap-2 mb-3">
+                                <img src="./assets/images/Vector.svg" alt="icon">
+                                <p>Aksiya</p>
+                            </div>
+                            <div class="ml-9 flex flex-col gap-1">
+                                <p class="py-2 px-4 hover:bg-white rounded-l-lg duration-150 cursor-pointer"><a href="#">Kompyuterlar va notebooklar</a></p>
+                                <p class="py-2 px-4 hover:bg-white rounded-l-lg duration-150 cursor-pointer"><a href="#">Telefonlar</a></p>
+                                <p class="py-2 px-4 hover:bg-white rounded-l-lg duration-150 cursor-pointer"><a href="#">Maishiy texnika</a></p>
+                                <p class="py-2 px-4 hover:bg-white rounded-l-lg duration-150 cursor-pointer"><a href="#">Erkaklar uchun kiyim</a></p>
+                                <p class="py-2 px-4 hover:bg-white rounded-l-lg duration-150 cursor-pointer"><a href="#">Ayollar uchun kiyimlar</a></p>
+                                <p class="py-2 px-4 hover:bg-white rounded-l-lg duration-150 cursor-pointer"><a href="#">Bolalar uchun </a></p>
+                                <p class="py-2 px-4 hover:bg-white rounded-l-lg duration-150 cursor-pointer"><a href="#">Avtomobil mahsulotlari</a></p>
+                                <p class="py-2 px-4 hover:bg-white rounded-l-lg duration-150 cursor-pointer"><a href="#">Go'zallik va so'glik</a></p>
+                                <p class="py-2 px-4 hover:bg-white rounded-l-lg duration-150 cursor-pointer"><a href="#">Sport va o'yin-kulgi</a></p>
+                                <p class="py-2 px-4 hover:bg-white rounded-l-lg duration-150 cursor-pointer"><a href="#">Uy hayvonlari uchun tovarlar</a></p>
+                                <p class="py-2 px-4 hover:bg-white rounded-l-lg duration-150 cursor-pointer"><a href="#">Xobbi va ijodkorlik</a></p>
+                                <p class="py-2 px-4 hover:bg-white rounded-l-lg duration-150 cursor-pointer"><a href="#">Kantselyariya buyumlari</a></p>
+                            </div>
+                        </div>
+                        <div class="w-[75%]">
+                            <div class="pl-5 pt-3 flex gap-[200px]">
+                                <ul class="flex flex-col gap-2">
+                                    <li><p class="font-medium">Brendlar</p></li>
+                                    <li><a href="#">Samsung</a></li>
+                                    <li><a href="#">Vivo</a></li>
+                                    <li><a href="#">Tecno</a></li>
+                                    <li><a href="#">Realme</a></li>
+                                    <li><a href="#">Xiaomi</a></li>
+                                    <li><a href="#">Apple</a></li>
+                                    <li><a href="#">Artel</a></li>
+                                    <li><a href="#">Nokia</a></li>
+                                    <li><a href="#">Infinix</a></li>
+                                    <li><a href="#">OnePlus</a></li>
+                                    <li><a href="#">ZTE</a></li>
+                                    <li><a href="#">Blackview</a></li>
+                                    <li><a href="#">Oppo</a></li>
+                                    <li><a href="#">Ergo</a></li>
+                                    <li><a href="#">BQ</a></li>
+                                    <li><a href="#">Huawei</a></li>
+                                </ul>
+                                <div class="flex flex-wrap ">
+                                    <ul class="w-[208px] h-[100px]">
+                                        <li><p class="font-medium">Samsung brendi</p></li>
+                                        <li><a href="#">S serial</a></li>
+                                        <li><a href="#">A serial</a></li>
+                                        <li><a href="#">Note serial</a></li>
+                                        <li><a href="#">M serial</a></li>
+                                    </ul>
+                                    <ul class="w-[208px] h-[100px]">
+                                        <li><p class="font-medium">Samsung brendi</p></li>
+                                        <li><a href="#">S serial</a></li>
+                                        <li><a href="#">A serial</a></li>
+                                        <li><a href="#">Note serial</a></li>
+                                        <li><a href="#">M serial</a></li>
+                                    </ul>
+                                    <ul class="w-[208px] h-[100px]">
+                                        <li><p class="font-medium">Samsung brendi</p></li>
+                                        <li><a href="#">S serial</a></li>
+                                        <li><a href="#">A serial</a></li>
+                                        <li><a href="#">Note serial</a></li>
+                                        <li><a href="#">M serial</a></li>
+                                    </ul>
+                                    <ul class="w-[208px] h-[100px]">
+                                        <li><p class="font-medium">Samsung brendi</p></li>
+                                        <li><a href="#">S serial</a></li>
+                                        <li><a href="#">A serial</a></li>
+                                        <li><a href="#">Note serial</a></li>
+                                        <li><a href="#">M serial</a></li>
+                                    </ul>
+                                    <ul class="w-[208px] h-[100px]">
+                                        <li><p class="font-medium">Samsung brendi</p></li>
+                                        <li><a href="#">S serial</a></li>
+                                        <li><a href="#">A serial</a></li>
+                                        <li><a href="#">Note serial</a></li>
+                                        <li><a href="#">M serial</a></li>
+                                    </ul>
+                                    <ul class="w-[208px] h-[100px]">
+                                        <li><p class="font-medium">Samsung brendi</p></li>
+                                        <li><a href="#">S serial</a></li>
+                                        <li><a href="#">A serial</a></li>
+                                        <li><a href="#">Note serial</a></li>
+                                        <li><a href="#">M serial</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+            </div>
+            <div class="login-panel absolute bg-[#1e1e1ea0] mx-auto overflow-x-hidden top-0 hidden duration-200">
+                <div class="w-[466px] h-[425px] bg-white mx-auto mt-[170px] rounded-xl duration-200 px-[60px] relative">
+                    <span class="remove-btn absolute top-2 right-3 cursor-pointer text-[30px] active:text-red-600"><i class='bx bx-x'></i></span>
+                    <h2 class="text-[28px] pt-[50px] text-center mb-[90px]">Hisobga kirish uchun</h2>
+                    <div class="flex flex-col items-center">
+                        <button class="w-full bg-[#0D63F3] rounded-xl py-2 text-white mb-2">Kirish</button>
+                        <a class="text-[#6C757D]" href="#">Yoki</a>
+                        <button class="w-full bg-transparent rounded-xl py-2 border-[1px] border-[#0D63F3] text-[#0D63F3] mt-[30px]">Ro’yxatdan o’tish</button>
+                    </div>
+                </div>
             </div>
         </header>
         <main>
@@ -58,7 +164,7 @@
                     <span  class="prev-button absolute top-[45%] left-[-50px] w-[42px] h-[42px] bg-gradient-to-l from-[#4d5ef633] to-[#f64d4d33] flex items-center justify-center rounded-full cursor-pointer">
                         <img src="./assets/images/keyboard_arrow_left.svg" alt="icon">
                     </span>
-                    <span onclick="slider()" class="next-button absolute top-[45%] right-[-50px] w-[42px] h-[42px] bg-gradient-to-l from-[#4D5EF6] to-[#F64D4D] flex items-center justify-center rounded-full cursor-pointer">
+                    <span class="next-button absolute top-[45%] right-[-50px] w-[42px] h-[42px] bg-gradient-to-l from-[#4D5EF6] to-[#F64D4D] flex items-center justify-center rounded-full cursor-pointer">
                         <img src="./assets/images/keyboard_arrow_right.svg" alt="icon">
                     </span>
                 </div>
